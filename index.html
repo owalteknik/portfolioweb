@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Muhammad Owal Nifka</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Font (pixel tapi modern) -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="logo">PortofolioMe.</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#projects">Riwayat</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+  <div class="bg-glow"></div>
+  <div class="particles"></div>
+  <div class="light" id="light"></div>
+
+  <div class="hero-content">
+   <h1 class="title"><span id="typing"></span></h1>
+    <p class="subtitle">Teknik Informatika</p>
+    <p class="desc">Mahasiswa</p>
+
+    <div class="hero-btns">
+      <button onclick="scrollToSection('gallery')">Lihat Project</button>
+      <button class="outline" onclick="scrollToSection('contact')">Kontak</button>
+    </div>
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+
+  <div class="about-container">
+
+    <!-- KIRI (PROFILE FOTO + TEXT) -->
+    <div class="about-left">
+
+      <div class="profile-card">
+        <div class="profile-img">
+          <img src="img/profile.jpg" alt="Profile">
+        </div>
+
+        <h3 class="profile-name">Muhammad Owal Nifka</h3>
+        <p class="profile-role">Informatics Student • Web Developer</p>
+
+        <div class="profile-socials">
+          <a href="#">IG</a>
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="about-text">
+        <h2 class="about-title">Tentang Saya</h2>
+        <p>
+          Saya adalah mahasiswa Teknik Informatika yang memiliki minat besar
+          dalam pengembangan web modern, UI/UX design, dan pembuatan sistem digital.
+        </p>
+        <p>
+          Saya senang membangun aplikasi yang tidak hanya berfungsi,
+          tetapi juga memiliki tampilan yang menarik dan pengalaman pengguna yang baik.
+        </p>
+
+        <div class="about-tags">
+          <span>Frontend</span>
+          <span>UI/UX</span>
+          <span>Web App</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- KANAN (SKILL) -->
+    <div class="about-card">
+      <div class="card-inner">
+
+        <h3>Skill Highlight</h3>
+
+        <div class="skills">
+
+          <div class="skill" data-percent="90">
+            <div class="skill-header">
+              <span>HTML</span>
+              <span class="percent">0%</span>
+            </div>
+            <div class="bar"><div></div></div>
+          </div>
+
+          <div class="skill" data-percent="85">
+            <div class="skill-header">
+              <span>CSS</span>
+              <span class="percent">0%</span>
+            </div>
+            <div class="bar"><div></div></div>
+          </div>
+
+          <div class="skill" data-percent="75">
+            <div class="skill-header">
+              <span>JavaScript</span>
+              <span class="percent">0%</span>
+            </div>
+            <div class="bar"><div></div></div>
+          </div>
+
+          <div class="skill" data-percent="70">
+            <div class="skill-header">
+              <span>Flutter</span>
+              <span class="percent">0%</span>
+            </div>
+            <div class="bar"><div></div></div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROJECT -->
+<section id="projects" class="projects">
+
+  <h2 class="section-title">Riwayat Project</h2>
+
+  <div class="project-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+
+      <div class="project-image">
+        <img src="img/WhatsApp Image 2026-05-05 at 22.06.22.jpeg" alt="Project 1">
+      </div>
+
+      <div class="project-content">
+        <h3>Website Wisata Pidie</h3>
+        <p>Website informasi wisata dengan tampilan modern dan navigasi interaktif
+          untuk eksplorasi destinasi di Pidie.
+</p>
+
+        <div class="project-meta">
+          <span>2026</span>
+          <p class="meta">2026 • Personal Project</p>
+        </div>
+
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+
+      <div class="project-image">
+        <img src="img/tugas2.jpg" alt="Project 2">
+      </div>
+
+      <div class="project-content">
+        <h3>E-Learning App</h3>
+        <p>
+Aplikasi web e-wallet berbasis Flask dengan fitur login, dashboard, top up saldo, dan riwayat transaksi. 
+Menggunakan SQLite untuk penyimpanan data dan dirancang dengan UI modern menyerupai aplikasi fintech.</p>
+
+        <div class="project-meta">
+          <span>2026</span>
+          <p class="meta">2026 • Academic Project</p>
+        </div>
+
+        <div class="project-tags">
+          <span>Python</span>
+          <span>Visual Code Studio</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+
+  <h2 class="section-title">Kontak</h2>
+
+  <div class="contact-container">
+
+    <!-- INFO -->
+    <div class="contact-info">
+      <h3>Hubungi Saya</h3>
+      <p>Silakan hubungi saya untuk kolaborasi, project, atau diskusi.</p>
+
+      <div class="contact-list">
+        <p>Email: danieldafenaza@gmail.com</p>
+        <p>WhatsApp: 08xxxxxxxxxx</p>
+        <p>Lokasi: Aceh, Indonesia</p>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <form class="contact-form">
+      <input type="text" placeholder="Nama" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Pesan..." required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <h3 class="footer-logo">Owal.dev</h3>
+
+    <p class="footer-desc">
+      Portfolio Muhammad Owal Nifka — Teknik Informatika
+    </p>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang</a>
+      <a href="#projects">Project</a>
+      <a href="#contact">Kontak</a>
+    </div>
+
+    <div class="footer-socials">
+      <a href="#">Instagram</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </div>
+
+    <p class="footer-copy">
+      © 2026 Muhammad Owal Nifka. All rights reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
